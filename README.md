@@ -18,4 +18,21 @@ f(x) = max(0, x)
 
 MaxPooling2D(pool_size=(2, 2)) проплывает окошком размером (2, 2) по матрице и для каждого окошка выбирает максимальное значение, уменьшая размер исходной матрицы
 
+# Eng
+Neural network for classification of images with one color channel (grayscale) with a size of 28 x 28 pixels. 10 different objects / classes with 10 neurons and softmax inclusion functions are classified.
+
+softmax returns the probability of the picture number to each class. Those. the output is a matrix with 10 columns (one column per class) with probabilities.
+
+The Dense layer is a simple, fully connected layer when each of them is connected to each of them. Usually in all convolutional networks in the last layers 2-3 layers are used, which follow the layers of convolution, pulling and "straightening" (layer: smooth).
+
+The Flatten layer "straightens" 2 + -dimensional matrices into one-dimensional vectors. For example, from a matrix of dimension (64, 32, 32) we obtain a one-dimensional vector with 64 * 32 * 32 = 65536 elements.
+
+Dropout - one of the methods of regularization (used to combat re-training).
+
+relu is one of the most popular nonlinear activation functions of neurons:
+
+f (x) = max (0, x)
+
+MaxPooling2D (pool_size = (2, 2)) swims by a window (2, 2) in the matrix and for each window selects the maximum value, reducing the size of the original matrix
+
 ![alt text](https://github.com/poteminr/PoteminMnistPrediction/blob/master/logo.jpg)
